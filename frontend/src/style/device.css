@@ -1,0 +1,127 @@
+.addDevices{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+}
+.addDevices .containerDevices{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+}
+.addDevices header{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "title goBack";
+}
+.addDevices header .titleDevice{
+    text-align: left;
+    grid-area: title;
+}
+.addDevices header .goBack{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    grid-area: goBack;
+}
+.addDevices header .goBack h1{
+    cursor: pointer;
+}
+.addDevices form.formAdd{
+    width: 80%;
+}
+.addDevices .extras{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.addDevices .Content-extra{
+    display: flex;
+    justify-content: space-around;
+}
+.addDevices a{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+.addDevices input{
+    display: block;
+    margin: 10px 0px 30px 0px ;
+    width: 24vw;
+    height: 35px;
+    padding: 0 0 0 15px;
+    outline: none;
+    border: 1px solid #1EB3CF;
+    transition: padding .3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.392);
+}
+.addDevices select{
+    display: block;
+    margin: 10px 0px 30px 0px ;
+    width: 25vw;
+    height: 40px;
+    padding: 0 0 0 15px;
+    outline: none;
+    border: 1px solid #1EB3CF;
+    transition: padding .3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.392);
+    color: rgb(134, 132, 132);
+}
+.addDevices option{
+    color: rgb(0, 0, 0);
+}
+
+.addDevices input:focus{
+    transition: 0.5s ease-out;
+    padding-right: 50px;
+    box-shadow: 9px 6px 17px -4px #1eb5cf63;
+-webkit-box-shadow: 9px 6px 17px -4px #1eb5cf63;
+-moz-box-shadow: 9px 6px 17px -4px #1eb5cf63;
+}
+.addDevices button{
+    margin-top: 20px;
+    position: relative;
+    width: 25vw;
+    height: 40px;
+    background: rgb(31,180,208);
+    background: linear-gradient(90deg, rgba(31,180,208,1) 20%, rgba(0,0,0,1) 100%);
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all .3s ease-in-out;
+    z-index: 0;
+}
+.addDevices button::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    left: -100%;
+    z-index: -1;
+    background: rgb(31,180,208);
+    transition: all .3s ease-in-out;
+}
+.addDevices button:hover::before{
+    left: 0;
+}
+.addDevices button span{
+    z-index: 2;
+}
+.eliminar{
+    cursor: pointer;
+}
+.closeSesion{
+    cursor: pointer;
+}
